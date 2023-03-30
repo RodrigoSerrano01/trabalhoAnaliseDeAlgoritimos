@@ -11,38 +11,29 @@ import static Model.variaveisConstantes.*;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        NumerosRandomizados n = new NumerosRandomizados(TAMANHO.getValor(), PRIMEIRO.getValor(),ULTIMO.getValor());
+        NumerosRandomizados n = new NumerosRandomizados(TAMANHO.getValor(), PRIMEIRO.getValor(), ULTIMO.getValor());
 
 
-        //List<Integer> organizada = List.of(new BubbleSort().agrupa(n.getArrayNumeros()));
+        // List<Integer> organizada = List.of(new BubbleSort().agrupa(n.getArrayNumeros()));
 
-       // GerenciaArquivo.salvaArquivo(organizada,TAMANHO.getValor());
-        List<Integer> organizada= GerenciaArquivo.leArquivo(TAMANHO.getValor());
+        //GerenciaArquivo.salvaArquivo(organizada,TAMANHO.getValor());
+        List<Integer> organizada = GerenciaArquivo.leArquivo(TAMANHO.getValor());
 
         Integer index = NumeroAPesquisar.numeroDaBusca(TAMANHO.getValor());
         Integer elemento = organizada.get(index).intValue();
 
-        System.out.println("Index: "+index+ " Numero de elemento:"+elemento);
+        System.out.println("Index: " + index + " Numero de elemento:" + elemento);
 
-       // organizada.forEach(System.out::println);
-
-        System.out.println("Inicio das buscas");
-        //tempoBuscaLinear(organizada,elemento);
         TempoLinear tempoLinear = new TempoLinear();
         TempoOrdenado tempoOrdenado = new TempoOrdenado();
 
-        tempoLinear.tempoBusca(organizada,elemento);
-        tempoOrdenado.tempoBusca(organizada,elemento);
+        tempoLinear.tempoBusca(organizada, elemento);
+        tempoOrdenado.tempoBusca(organizada, elemento);
 
         System.out.println(tempoLinear);
         System.out.println(tempoOrdenado);
 
-        //tempoBuscaOrdenada(organizada,elemento);
-
-        //System.out.println(BuscaLinear.buscaElemento(organizada,elemento));
     }
-
-
 
 
 }

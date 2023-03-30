@@ -2,7 +2,7 @@ package Model;
 
 public enum variaveisConstantes {
 
-    TAMANHO(3), PRIMEIRO(1), ULTIMO(2000);
+    TAMANHO(100000), PRIMEIRO(1), ULTIMO(200000);
 
 
     private final int valor;
