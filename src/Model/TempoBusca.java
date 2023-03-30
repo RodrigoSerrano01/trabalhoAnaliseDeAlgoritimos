@@ -9,5 +9,4 @@ public interface TempoBusca {
     public String toString();
 
 
-
 }

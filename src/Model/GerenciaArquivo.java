@@ -3,7 +3,9 @@ package Model;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public abstract class GerenciaArquivo {
 
@@ -28,17 +30,12 @@ public abstract class GerenciaArquivo {
 
     public static List<Integer> leArquivo(Integer tamanho) throws IOException {
         FileReader fr = new FileReader(tamanho+".txt");
-        List<String[]> listaAux = new ArrayList<>();
-        List<Integer> listaInteger = new ArrayList<>() ;
+        List<String> listaAux = new ArrayList<>() ;
         BufferedReader br = new BufferedReader(fr);
         String str;
         while ((str = br.readLine()) != null){
-            listaAux.add(str.split(":"));
+            listaAux= Arrays.stream(((str.split(":")))).toList();
         }
-        System.out.println("!!!!!!!!!!!!!!!!!");
-        for (String a[]: listaAux ) {
-            listaInteger.add(Integer.parseInt(Arrays.toString(a)));
-        }
-        return listaInteger;
+        return listaAux.stream().map(s->Integer.parseInt(String.valueOf(s))).collect(Collectors.toList());
     }
 }
