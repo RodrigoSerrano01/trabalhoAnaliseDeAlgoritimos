@@ -34,8 +34,10 @@ public abstract class GerenciaArquivo {
         BufferedReader br = new BufferedReader(fr);
         String str;
         while ((str = br.readLine()) != null){
-            listaAux= Arrays.stream(((str.split(":")))).toList();
+            //listaAux= Arrays.stream(((str.split(":")))).toList();
+            listaAux= Arrays.stream(((str.split(":")))).collect(Collectors.toList());
         }
+
         return listaAux.stream().map(s->Integer.parseInt(String.valueOf(s))).collect(Collectors.toList());
     }
 }
