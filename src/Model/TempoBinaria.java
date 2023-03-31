@@ -1,12 +1,12 @@
 package Model;
 
 import java.util.List;
-
+import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
 public class TempoBinaria implements TempoBusca {
     public double tempo;
 
     @Override
-    public double tempoBusca(List<Integer> lista, Integer elemento) {
+    public double tempoBusca(List<Integer> lista, Integer elemento) throws ValidaNumeroException{
         double start = System.nanoTime();
         Integer aux = BuscaBinaria.buscaElemento(lista, elemento);
         double end = System.nanoTime();

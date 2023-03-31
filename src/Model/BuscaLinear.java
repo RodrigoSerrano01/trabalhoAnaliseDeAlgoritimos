@@ -1,11 +1,11 @@
 package Model;
-
+import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public abstract class BuscaLinear {
 
-    public static Integer buscaElemento(List<Integer> lista, Integer elemento) {
+    public static Integer buscaElemento(List<Integer> lista, Integer elemento) throws ValidaNumeroException{
 
 
 
@@ -15,7 +15,7 @@ public abstract class BuscaLinear {
                 return lista.get(i).intValue();
             }
         }
-        return -1;
+        throw new ValidaNumeroException("Numero não encontrado");
 
     }
 }

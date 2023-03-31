@@ -1,10 +1,10 @@
 package Model;
-
+import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
 import java.util.List;
 
 public abstract class BuscaOrdenada {
 
-    public static int buscaElemento(List<Integer> lista, Integer elemento) {
+    public static int buscaElemento(List<Integer> lista, Integer elemento) throws ValidaNumeroException{
         for (int i = 0; i < lista.size(); i++) {
             if (lista.get(i).intValue() > elemento) {
                 return -1;
@@ -14,7 +14,7 @@ public abstract class BuscaOrdenada {
             }
         }
 
-        return -1;
+        throw new ValidaNumeroException("Numero não encontrado");
     }
 
 }

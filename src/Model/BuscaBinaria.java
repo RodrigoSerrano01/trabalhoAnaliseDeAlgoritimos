@@ -1,12 +1,15 @@
 package Model;
 
+import MinhasExceptions.MinhasExceptions;
+
 import java.util.List;
+import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
 
-public class BuscaBinaria {
+public class BuscaBinaria  {
 
 
 
-    public static int buscaElemento(List<Integer> lista, Integer elemento) {
+    public static int buscaElemento(List<Integer> lista, Integer elemento)  throws ValidaNumeroException {
         int start = 0;
         int end = lista.size();
         int mid;
@@ -23,8 +26,8 @@ public class BuscaBinaria {
 
             }
         }
+           throw new ValidaNumeroException("Numero não encontrado");
 
-        return -1; // Elemento não existe na lista
     }
 
 }
