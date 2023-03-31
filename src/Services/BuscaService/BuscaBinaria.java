@@ -9,6 +9,15 @@ public class BuscaBinaria  {
 
 
 
+    /**
+     * @author  Lucas Tatsch Corrêa
+     *
+     *
+     *  Aloritimo de busca binaria.
+     *
+     *
+     */
+
     public static int buscaElemento(List<Integer> lista, Integer elemento)  throws ValidaNumeroException {
         int start = 0;
         int end = lista.size();
@@ -27,7 +36,7 @@ public class BuscaBinaria  {
             }
         }
           // throw new ValidaNumeroException("Numero não encontrado");
-        System.out.println("numero não encontrado bin");
+        System.out.println("numero não encontrado binaria");
         return -1;
 
     }

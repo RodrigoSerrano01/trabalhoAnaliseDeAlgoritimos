@@ -1,5 +1,17 @@
 package Model.Enum;
 
+
+
+
+/**
+ * @author Rodrigo Serrano Silveira
+ *
+ *
+ *  Variaveis usadas para os tamanhos e na geração de numeros randomicos.
+ *
+ *
+ */
+
 public enum variaveisConstantes {
 
     TAMANHO(1000000), PRIMEIRO(1), ULTIMO(2000000);

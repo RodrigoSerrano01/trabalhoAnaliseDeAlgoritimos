@@ -5,6 +5,17 @@ import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
 import Services.BuscaService.BuscaBinaria;
 import Model.TempoModel.TempoBusca;
 
+
+/**
+ * @author Rodrigo Serrano Silveira, Lucas Tatsch Corrêa
+ *
+ * classe que calcula o tempo que o metodo buscaElemento demora para executar
+ *
+ * calcula e printa o resultado.
+ *
+ *
+ *
+ */
 public class TempoBinaria implements TempoBusca {
     public double tempo;
 

@@ -6,6 +6,15 @@ import java.util.List;
 
 public class ImprimeTempo {
 
+
+    /**
+     * @author Rodrigo Serrano Silveira
+     *
+     * Classe usada para poder usar polimorfismo nas buscas de tempo.
+     *
+     *
+     *
+     */
     private List<TempoBusca> tempos;
 
     public ImprimeTempo(List<TempoBusca> tempos) {

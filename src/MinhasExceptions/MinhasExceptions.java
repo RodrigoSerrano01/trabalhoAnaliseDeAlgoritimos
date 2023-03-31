@@ -1,6 +1,16 @@
 package MinhasExceptions;
 
 public class MinhasExceptions {
+
+
+    /**
+     * @author Rodrigo Serrano Silveira
+     *
+     * Tratamento de excessão
+     *
+     *
+     *
+     */
     public static class ValidaNumeroException extends RuntimeException{
 
 

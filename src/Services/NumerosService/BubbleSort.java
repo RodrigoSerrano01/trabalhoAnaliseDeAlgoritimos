@@ -5,6 +5,15 @@ import Model.NumerosModel.Sort;
 
 import java.util.stream.IntStream;
 
+
+/**
+ * @author Rodrigo Serrano Silveira, Lucas Tatsch Corrêa
+ *
+ *  Ordena a lista de numeros.
+ *
+ *
+ *
+ */
 public class BubbleSort implements Sort {
 
 

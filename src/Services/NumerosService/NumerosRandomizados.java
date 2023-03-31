@@ -4,6 +4,15 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
+
+/**
+ * @author Rodrigo Serrano Silveira
+ *
+ *Cria e randomiza numeros para uma lista de Integer.
+ *
+ *
+ *
+ */
 public class NumerosRandomizados {
 
     private List<Integer> set;

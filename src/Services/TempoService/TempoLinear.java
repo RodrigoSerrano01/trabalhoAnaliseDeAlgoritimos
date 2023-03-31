@@ -5,6 +5,17 @@ import Model.TempoModel.TempoBusca;
 
 import java.util.List;
 
+
+/**
+ * @author Rodrigo Serrano Silveira, Lucas Tatsch Corrêa
+ *
+ * classe que calcula o tempo que o metodo buscaElemento demora para executar
+ *
+ * calcula e printa o resultado.
+ *
+ *
+ *
+ */
 public  class TempoLinear implements TempoBusca {
 
     private double tempo;

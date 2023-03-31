@@ -10,6 +10,17 @@ import java.util.stream.Collectors;
 
 
 
+/**
+ * @author Rodrigo Serrano Silveira, Juan Menin Herrera
+ *
+ *
+ *  Classe que faz a leitura e escrita dos arquivos .txt
+ *
+ *
+ *
+ *
+ */
+
 
 public abstract class GerenciaArquivo {
 

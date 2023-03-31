@@ -2,6 +2,16 @@ package Services.BuscaService;
 import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
 import java.util.List;
 
+
+
+/**
+ * @author  Lucas Tatsch Corrêa
+ *
+ * faz a busca Ordenada das listas.
+ *
+ *
+ *
+ */
 public abstract class BuscaOrdenada {
 
     public static int buscaElemento(List<Integer> lista, Integer elemento) throws ValidaNumeroException{

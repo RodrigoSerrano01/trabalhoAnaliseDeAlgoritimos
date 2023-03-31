@@ -3,6 +3,15 @@ import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+
+/**
+ * @author Lucas Tatsch Corrêa
+ *
+ * faz a busca linear nas listas.
+ *
+ *
+ */
 public abstract class BuscaLinear {
 
     public static Integer buscaElemento(List<Integer> lista, Integer elemento) throws ValidaNumeroException{
