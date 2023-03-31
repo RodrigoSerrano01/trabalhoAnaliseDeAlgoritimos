@@ -3,6 +3,7 @@ package Services;
 import Model.*;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import static Model.variaveisConstantes.*;
@@ -23,15 +24,22 @@ public class Main {
         Integer elemento = organizada.get(index).intValue();
 
         System.out.println("Index: " + index + " Numero de elemento:" + elemento);
-
+        BuscaBinaria.buscaElemento(organizada,elemento);
         TempoLinear tempoLinear = new TempoLinear();
         TempoOrdenado tempoOrdenado = new TempoOrdenado();
+        TempoBinaria tempoBinaria = new TempoBinaria();
 
-        tempoLinear.tempoBusca(organizada, elemento);
-        tempoOrdenado.tempoBusca(organizada, elemento);
+      //  tempoLinear.tempoBusca(organizada, elemento);
+      //  tempoOrdenado.tempoBusca(organizada, elemento);
+      //  tempoBinaria.tempoBusca(organizada, elemento);
 
-        System.out.println(tempoLinear);
-        System.out.println(tempoOrdenado);
+
+
+       // List<TempoBusca> listaTempo;
+       // listaTempo.forEach(a -> a.tempoBusca(organizada,elemento));
+        List<TempoBusca> listaTemp= new ArrayList<TempoBusca>();
+       ImprimeTempo imprimeTempo = new ImprimeTempo(listaTemp);
+       imprimeTempo.fazerBuscas(organizada,elemento);
 
     }
 

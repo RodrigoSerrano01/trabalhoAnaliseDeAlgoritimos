@@ -2,13 +2,13 @@ package Model;
 
 import java.util.List;
 
-public class TempoOrdenado implements TempoBusca {
+public class TempoBinaria implements TempoBusca {
     public double tempo;
 
     @Override
     public double tempoBusca(List<Integer> lista, Integer elemento) {
         double start = System.nanoTime();
-        Integer aux = BuscaOrdenada.buscaElemento(lista, elemento);
+        Integer aux = BuscaBinaria.buscaElemento(lista, elemento);
         double end = System.nanoTime();
         this.tempo = ((end - start) / 1000000);
         System.out.println(toString());
@@ -17,7 +17,7 @@ public class TempoOrdenado implements TempoBusca {
 
     @Override
     public String toString() {
-        return String.format("Tempo de execução busca Ordenada: %.6f ms", this.tempo);
+        return String.format("Tempo de execução busca Binaria: %.6f ms", this.tempo);
     }
 
 }

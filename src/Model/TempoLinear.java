@@ -11,6 +11,7 @@ public  class TempoLinear implements TempoBusca {
         Integer aux = BuscaLinear.buscaElemento(lista,elemento);
         double end =  System.nanoTime();
         this.tempo = ((end - start)/ 1000000);
+        System.out.println(toString());
         return tempo;
     }
 
