@@ -6,6 +6,7 @@ import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
 import Model.TempoModel.TempoBusca;
 import Services.ArquivosService.GerenciaArquivo;
 import Services.ImpressaoService.ImprimeTempo;
+import Services.NumerosService.BubbleSort;
 import Services.NumerosService.NumeroAPesquisar;
 import Services.NumerosService.NumerosRandomizados;
 import Services.TempoService.TempoBinaria;
@@ -34,9 +35,16 @@ public class Main {
         NumerosRandomizados n = new NumerosRandomizados(TAMANHO.getValor(), PRIMEIRO.getValor(), ULTIMO.getValor());
 
 
-        // List<Integer> organizada = List.of(new BubbleSort().agrupa(n.getArrayNumeros()));
+        //SE QUISER SÓ RODAR, DEIXE SOMENTE A LEARQUIVOS (48);
+        //SE QUISER CRIAR ARQUIVOS COMENTE A LEARQUIVOS(48) E DESCOMENTE AS LINHA (42/43)
 
-        //GerenciaArquivo.salvaArquivo(organizada,TAMANHO.getValor());
+        /*
+         List<Integer> organizada = List.of(new BubbleSort().agrupa(n.getArrayNumeros()));
+        GerenciaArquivo.salvaArquivo(organizada,TAMANHO.getValor());
+
+         */
+
+        //COMENTE ESSA
         List<Integer> organizada = GerenciaArquivo.leArquivo(TAMANHO.getValor());
 
             Integer elemento = NumeroAPesquisar.numeroDaBusca(PRIMEIRO.getValor(), ULTIMO.getValor());
