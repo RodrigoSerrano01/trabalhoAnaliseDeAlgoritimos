@@ -1,7 +1,8 @@
-package Model;
+package Services.NumerosService;
 
 
-import java.util.List;
+import Model.NumerosModel.Sort;
+
 import java.util.stream.IntStream;
 
 public class BubbleSort implements Sort {

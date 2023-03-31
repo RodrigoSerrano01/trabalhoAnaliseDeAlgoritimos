@@ -1,12 +1,31 @@
-package Services;
-
-import Model.*;
+package MainApllication;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
-import static Model.variaveisConstantes.*;
+import Model.TempoModel.TempoBusca;
+import Services.ArquivosService.GerenciaArquivo;
+import Services.ImpressaoService.ImprimeTempo;
+import Services.NumerosService.NumeroAPesquisar;
+import Services.NumerosService.NumerosRandomizados;
+import Services.TempoService.TempoBinaria;
+import Services.TempoService.TempoLinear;
+import Services.TempoService.TempoOrdenado;
+
+import static Model.Enum.variaveisConstantes.*;
+
+/**
+ *
+ * @author Rodrigo Serrano Silveira, Lucas Tatsch Corrêa
+ *
+ * Classe responsavel de por rodar o programa
+ *
+ * chama as funções para criar o arquivo com os numeros e também lê os arquivos.
+ *
+ * Cria uma lista das classes tempo e executa todos os calculos dos métodos.
+ *
+ *
+ */
 
 
 public class Main {

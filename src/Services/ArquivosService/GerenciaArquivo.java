@@ -1,4 +1,4 @@
-package Model;
+package Services.ArquivosService;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -6,6 +6,10 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
+
+
+
+
 
 public abstract class GerenciaArquivo {
 

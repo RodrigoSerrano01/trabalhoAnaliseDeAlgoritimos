@@ -1,4 +1,7 @@
-package Model;
+package Services.TempoService;
+
+import Services.BuscaService.BuscaLinear;
+import Model.TempoModel.TempoBusca;
 
 import java.util.List;
 

@@ -1,4 +1,6 @@
-package Model;
+package Services.ImpressaoService;
+
+import Model.TempoModel.TempoBusca;
 
 import java.util.List;
 

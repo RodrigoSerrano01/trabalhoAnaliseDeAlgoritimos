@@ -1,8 +1,8 @@
-package Model;
+package Model.Enum;
 
 public enum variaveisConstantes {
 
-    TAMANHO(100000), PRIMEIRO(1), ULTIMO(200000);
+    TAMANHO(1000000), PRIMEIRO(1), ULTIMO(2000000);
 
 
     private final int valor;

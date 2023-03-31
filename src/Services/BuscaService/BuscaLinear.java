@@ -1,4 +1,4 @@
-package Model;
+package Services.BuscaService;
 import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,7 +15,8 @@ public abstract class BuscaLinear {
                 return lista.get(i).intValue();
             }
         }
-        throw new ValidaNumeroException("Numero não encontrado");
-
+        //throw new ValidaNumeroException("Numero não encontrado");
+        System.out.println("numero não encontrado linear");
+        return -1;
     }
 }

@@ -1,4 +1,4 @@
-package Model;
+package Model.NumerosModel;
 
 import java.util.List;
 

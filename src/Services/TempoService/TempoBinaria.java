@@ -1,7 +1,10 @@
-package Model;
+package Services.TempoService;
 
 import java.util.List;
 import MinhasExceptions.MinhasExceptions.ValidaNumeroException;
+import Services.BuscaService.BuscaBinaria;
+import Model.TempoModel.TempoBusca;
+
 public class TempoBinaria implements TempoBusca {
     public double tempo;
 

@@ -1,4 +1,4 @@
-package Model;
+package Services.BuscaService;
 
 import MinhasExceptions.MinhasExceptions;
 
@@ -26,7 +26,9 @@ public class BuscaBinaria  {
 
             }
         }
-           throw new ValidaNumeroException("Numero não encontrado");
+          // throw new ValidaNumeroException("Numero não encontrado");
+        System.out.println("numero não encontrado bin");
+        return -1;
 
     }
 

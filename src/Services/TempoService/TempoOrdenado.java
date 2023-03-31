@@ -1,7 +1,21 @@
-package Model;
+package Services.TempoService;
+
+import Services.BuscaService.BuscaOrdenada;
+import Model.TempoModel.TempoBusca;
 
 import java.util.List;
 
+
+/**
+ * @author Rodrigo Serrano Silveira, Lucas Tatsch Corrêa
+ *
+ * classe que calcula o tempo que o metodo buscaElemento demora para executar
+ *
+ * calcula e printa o resultado.
+ *
+ *
+ *
+ */
 public class TempoOrdenado implements TempoBusca {
     public double tempo;
 
